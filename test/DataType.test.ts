@@ -197,7 +197,7 @@ describe('DataType', function () {
   });
 
   describe('getDetails() 함수 테스트', function () {
-    it('getDetails() 호출 시 변경된 값들이 올바르게 반환되어야 합니다.(positiveNumber, negativeNumber, isActive, wallet, recipient, fixedData, dynamicData, currentState)', async function () {
+    it('getDetails() 호출 시 모든 값들이 올바르게 반환되어야 합니다.(positiveNumber, negativeNumber, isActive, wallet, recipient, fixedData, dynamicData, currentState)', async function () {
       await contract.setPositiveNumber(500);
       await contract.setNegativeNumber(-200);
       await contract.toggleActive();
