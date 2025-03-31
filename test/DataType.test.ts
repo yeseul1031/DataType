@@ -51,7 +51,7 @@ describe('DataType', function () {
       expect(await contract.positiveNumber()).to.equal(500);
     });
 
-    it('setNumbers 호출 후 negativeNumber가 -200이어야 합니다.', async function () {
+    it('setNegativeNumber 호출 후 negativeNumber가 -200이어야 합니다.', async function () {
       await contract.setNegativeNumber(-200);
       expect(await contract.negativeNumber()).to.equal(-200);
     });
